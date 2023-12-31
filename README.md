@@ -7,3 +7,5 @@ Que cette année nouvelle soit empreinte de réussite, de joie et de moments ext
 
 1. Clonez le projet sur votre machine locale :
    ```bash
+
+git clone git@github.com:Naima-ABDOUNE/NewYear_2024.git
