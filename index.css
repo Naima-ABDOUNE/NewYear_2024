@@ -1,41 +1,134 @@
-body{
-    margin:0;
-    padding:0;
-    display:flex;
-    height:100vh;
-    background-image: radial-gradient(circle at 50% 100%, #1b1b35, #121225);
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  background-image: radial-gradient(circle at 50% 100%, #1b1b35, #121225);
 }
 
 .left-section {
-    width: 40%;
+  width: 40%;
 }
 
 .right-section {
-    width: 60%;
-    display:flex;
-   justify-content: center;
+  width: 60%;
+  justify-content: center;
+  align-items: center; 
 }
 
+.message {
+  font-weight: 1000;
+  letter-spacing: 3px;
+  font-family: "Mountains of Christmas", cursive;
+  font-size: 4vw;
+  color:red;
+  margin-top: 2%;
+  margin-bottom: 15%;
+  animation-name: wiebel;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wiebel {
+  25%{transform: rotate(10deg);}
+  50%{transform: rotate(0deg);}
+  75%{transform: rotate(-10deg);}
+  100%{transform: rotate(0deg);}
+}
+.canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+
+
+.enveloppe {
+  width: 50%;
+  height: 50%;
+
+  margin-top: 100px;
+}
+
+.square {
+  width: 400px;
+  height: 250px;
+  background-color: white;
+  border: 10px solid red;
+}
+
+.triangle {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 200px solid red;
+}
+
+
+.inner-triangle {
+  position: relative;
+  top: -200px;
+  left: -185px;
+  width: 0;
+  height: 0;
+  border-left: 185px solid transparent;
+  border-right: 185px solid transparent;
+  border-top: 185px solid wheat;
+}
+
+#knop {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 100px;
+  height: 75px;
+  position: relative;
+  top: -35px;
+  left: -50px;
+  font-family: chalkboard, sans-serif;
+  font-size: 1.125em;
+  transition-duration: 1s;
+}
+
+#knop:hover {
+  background-color: crimson;
+}
+
+#brief {
+  display: none;
+  position: relative;
+  top:-60%;
+  width: 60%;
+  height: 60%;
+  background-color: white;
+  border: 3px solid RED;
+  
+}
+.text {
+  font-family: chalkboard, sans-serif;
+  font-size: 1em;
+  text-align: center;
+  color: rgb(27, 27, 27);
+  margin-top:20%;
  
-.message{
-    font-weight: 1000;
-    letter-spacing: 3px;
-    font-family: "Mountains of Christmas", cursive;
-    font-size: 6vw;
-    text-align: center;
-    z-index: -1;
 }
 
-  .red {
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
+.person {
+  font-family: chalkboard, sans-serif;
+  font-size: 1em;
+  text-align: right;
+  margin-top: 100px;
+  margin-right: 25px;
+}
 
-  .canvas {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-  }
-  
-  
-  
+
+
+
+
+
+
+
+

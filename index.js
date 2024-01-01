@@ -79,4 +79,14 @@ const render = () => {
   });
 };
 
+var mijnKnop = document.getElementsByTagName("button");
+var teller = 0;
+while (teller < mijnKnop.length) {
+       this.onclick = function() {
+       var mijnDiv = document.getElementById("brief").style.display = "block";
+       console.log("Ayyyyyyyyyy");
+};
+       teller++;
+};
+
 render();
